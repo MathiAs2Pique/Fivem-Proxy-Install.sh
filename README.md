@@ -32,3 +32,10 @@ Additionally, some people were asking me how to do it, so I decided to make a sc
 ### Ad
 If you want a strong protection with more than a year of experience and constantly updated, you can check out [PurpleMaze](https://purplemaze.xyz).  
 [![PurpleMaze](https://cdn.discordapp.com/attachments/859400057564561408/1092897682344923249/purplemazeLogo.png)](https://purplemaze.xyz)
+
+## Additional notes
+- I personnaly recommend to use CloudFlare: DNS, Proxy and Edge Cache are really useful.
+- Please do not use the built-in nginx cache, as it's a mess if you want to udpate your scripts, and it would cost you a lot more than CloudFlare.
+- If you have your own SSL certificate, then just check web.conf to edit what needs to be edited.
+- If you want to use a custom port, then just check web.conf to edit what needs to be edited.
+- A **single** proxy is **not useful at all** as a DDoS protection, but it can be useful to hide your IP address.
