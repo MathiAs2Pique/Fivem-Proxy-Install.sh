@@ -67,7 +67,7 @@ echo "Installing certbot..."
 echo -e "\e[0m"
 if [ "$ssl" == "y" ]; then
     if [ "$OS" == "debian" ]; then
-        apt-get install -y python-certbot-nginx 
+        apt-get install -y python3-certbot-nginx 
     elif [ "$OS" == "centos" ]; then
         yum install -y certbot-nginx 
     fi
