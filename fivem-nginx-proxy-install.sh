@@ -23,11 +23,16 @@ if [ "$OS" == "debian" ]; then
     echo -e "\n\e[35m"
     echo "Adding Nginx repository..."
     echo -e "\e[0m"
-    echo "deb http://nginx.org/packages/mainline/debian/ buster nginx" >> /etc/apt/sources.list
-    echo "deb-src http://nginx.org/packages/mainline/debian/ buster nginx" >> /etc/apt/sources.list
-    wget http://nginx.org/keys/nginx_signing.key 
-    apt-key add nginx_signing.key 
-    rm nginx_signing.key
+    # Before, check if the repo. is already in the sources.
+    if grep -q "nginx.org" /etc/apt/sources.list; then
+        echo "Nginx repository already added."
+    else
+        echo "deb http://nginx.org/packages/mainline/debian/ buster nginx" >> /etc/apt/sources.list
+        echo "deb-src http://nginx.org/packages/mainline/debian/ buster nginx" >> /etc/apt/sources.list
+        wget http://nginx.org/keys/nginx_signing.key 
+        apt-key add nginx_signing.key 
+        rm nginx_signing.key
+    fi
     # Install it
     echo -e "\n\e[35m"
     echo "Installing Nginx..."
