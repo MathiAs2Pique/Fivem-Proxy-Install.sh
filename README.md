@@ -7,7 +7,7 @@ Additionally, some people were asking me how to do it, so I decided to make a sc
 **Feel free to DM me on Discord for help: MathiAs2Pique_#1717**  
 
 ## Requirements
-- Debian-based Linux distribution or CentOS/Fedora
+- Debian linux distribution (Tested on debian 10/11)
 - Root access
 - A domain name
 - A FiveM/RedM server
