@@ -27,6 +27,7 @@ if [ "$OS" == "debian" ]; then
     if grep -q "nginx.org" /etc/apt/sources.list; then
         echo "Nginx repository already added."
     else
+        sudo apt-get install gnupg2
         echo "deb http://nginx.org/packages/mainline/debian/ buster nginx" >> /etc/apt/sources.list
         echo "deb-src http://nginx.org/packages/mainline/debian/ buster nginx" >> /etc/apt/sources.list
         wget http://nginx.org/keys/nginx_signing.key 
