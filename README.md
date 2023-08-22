@@ -30,6 +30,7 @@ Additionally, some people were asking me how to do it, so I decided to make a sc
 - [Me](https://github.com/MathiAs2Pique)
 
 ### Ad
+
 If you want a strong protection with more than a year of experience and constantly updated, you can check out [PurpleMaze](https://purplemaze.net).  
 [![PurpleMaze](https://cdn.discordapp.com/attachments/859400057564561408/1092897682344923249/purplemazeLogo.png)](https://discord.gg/RThBYA5fAD)
 
