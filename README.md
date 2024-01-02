@@ -4,7 +4,7 @@ Handy script to install nginx as a proxy for your FiveM/RedM server.
 ## Why ?
 As I own [purplemaze](https://purplemaze.net), an anti-DDoS protection for FiveM, I needed to generate some proxy by hand, and I thought it would be a good idea to automate the process.  
 Additionally, some people were asking me how to do it, so I decided to make a script to help them.  
-**Feel free to DM me on Discord for help: MathiAs2Pique_#1717**  
+**Feel free to DM me on Discord for help: @m2p_**  
 
 ## Requirements
 - Debian linux distribution (Tested on debian 10/11)
