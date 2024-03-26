@@ -4,7 +4,7 @@ Handy script to install nginx as a proxy for your FiveM/RedM server.
 
 
 ## Requirements
-- Debian linux distribution (Tested on debian 10/11) - minimal only (not a self installed variant)
+- Debian linux distribution (Tested on debian 10/11/12) - minimal only (not a self installed variant)
 - Root access
 - A domain name
 - A FiveM/RedM server
@@ -38,6 +38,9 @@ set sv_endpoints "IPProxy:30120"
 
 
 3. Enjoy your new proxy!
+
+## Common issue on debian 12 and ubuntu 20.04
+If your nginx errors out and gives an output stating that it could not rebind ports to 30120, instead of running `sudo systemctl restart nginx` run `sudo pkill -f nginx & wait $!` then `sudo systemctl start nginx`
 
 ## Credits
 - [Nginx](https://nginx.org/)
