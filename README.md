@@ -18,7 +18,8 @@ Handy script to install nginx as a proxy for your FiveM/RedM server.
 
 ## Usage
 1. Follow the instructions
-2. Append the following into your sv.cfg 
+2. Append the following into your sv.cfg
+   
 ---your other config---
 sv_endpointprivacy true
 
@@ -34,6 +35,7 @@ set sv_endpoints "IPProxy:30120"
 
 sv_useDirectListing true
 ---End of config---
+
 
 3. Enjoy your new proxy!
 
