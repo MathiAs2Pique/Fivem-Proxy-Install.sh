@@ -29,7 +29,7 @@ Handy script to install nginx as a proxy for your FiveM/RedM server.
 - [Let's Encrypt](https://letsencrypt.org/)
 - [FiveM](https://fivem.net/)
 - [RedM](https://redm.gg/)
-- [Me](https://github.com/MathiAs2Pique)
+- [MathiAs2Pique](https://github.com/MathiAs2Pique)
 
 ###Credit to the original author and thanks to his help https://github.com/MathiAs2Pique/Fivem-Proxy-Install.sh/commits?author=MathiAs2Pique
 ### Ad
