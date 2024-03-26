@@ -34,8 +34,6 @@ set sv_proxyIPRanges "IPProxy/32"
 
 set sv_endpoints "IPProxy:30120"
 
-sv_useDirectListing true
-
 ---End of config---
 
 
