@@ -1,25 +1,27 @@
 # Fivem-Proxy-Install.sh
 Handy script to install nginx as a proxy for your FiveM/RedM server.
 
-## Why ?
-As I own [purplemaze](https://purplemaze.net), an anti-DDoS protection for FiveM, I needed to generate some proxy by hand, and I thought it would be a good idea to automate the process.  
-Additionally, some people were asking me how to do it, so I decided to make a script to help them.  
-**Feel free to DM me on Discord for help: @m2p_**  
+
 
 ## Requirements
-- Debian linux distribution (Tested on debian 10/11)
+- Debian linux distribution (Tested on debian 10/11) - minimal only (not a self installed variant)
 - Root access
 - A domain name
 - A FiveM/RedM server
 
 ## Installation
-1. Download the script
-2. Make it executable: `chmod +x fivem-proxy-install.sh`
-3. Run it: `./fivem-proxy-install.sh`
+1. clone this repo
+2. nano the install script `nano /Fivem-Proxy-Install.sh/fivem-nginx-proxy-install.sh`
+3. Find the ACME registration details and update with your email (it will usually be youremail@example.com)
+4. Make it executable: `chmod +x fivem-nginx-proxy-install.sh`
+5. Run it: `./fivem-nginx-proxy-install.sh`
 
 ## Usage
 1. Follow the instructions
-2. Enjoy your new proxy!
+2. Append the following into your sv.cfg 
+
+
+3. Enjoy your new proxy!
 
 ## Credits
 - [Nginx](https://nginx.org/)
@@ -29,8 +31,12 @@ Additionally, some people were asking me how to do it, so I decided to make a sc
 - [RedM](https://redm.gg/)
 - [Me](https://github.com/MathiAs2Pique)
 
+###Credit to the original author and thanks to his help https://github.com/MathiAs2Pique/Fivem-Proxy-Install.sh/commits?author=MathiAs2Pique
 ### Ad
-
+## Why ? 
+As I own [purplemaze](https://purplemaze.net), an anti-DDoS protection for FiveM, I needed to generate some proxy by hand, and I thought it would be a good idea to automate the process.  
+Additionally, some people were asking me how to do it, so I decided to make a script to help them.  
+**Feel free to DM me on Discord for help: @m2p_**  
 If you want a strong protection with more than a year of experience and constantly updated, you can check out [PurpleMaze](https://purplemaze.net).  
 [![PurpleMaze](https://cdn.discordapp.com/attachments/859400057564561408/1092897682344923249/purplemazeLogo.png)](https://discord.gg/RThBYA5fAD)
 
