@@ -11,10 +11,8 @@ Handy script to install nginx as a proxy for your FiveM/RedM server.
 
 ## Installation
 1. clone this repo
-2. nano the install script `nano /Fivem-Proxy-Install.sh/fivem-nginx-proxy-install.sh`
-3. Find the ACME registration details and update with your email (it will usually be youremail@example.com)
-4. Make it executable: `chmod +x fivem-nginx-proxy-install.sh`
-5. Run it: `./fivem-nginx-proxy-install.sh`
+2. Make it executable: `chmod +x fivem-nginx-proxy-install.sh`
+3. Run it: `./fivem-nginx-proxy-install.sh`
 
 ## Usage
 1. Follow the instructions
