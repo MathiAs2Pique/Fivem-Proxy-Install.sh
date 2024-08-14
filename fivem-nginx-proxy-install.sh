@@ -85,7 +85,7 @@ if [ "$ssl" == "y" ]; then
     cp /etc/letsencrypt/live/$domain/fullchain.pem /etc/nginx/ssl/fullchain.pem
     cp /etc/letsencrypt/live/$domain/privkey.pem /etc/nginx/ssl/privkey.pem
     # Adjust web.conf for SSL
-    sed -i "s/listen 80;/listen 443 ssl http2;/g" /etc/nginx/web.conf
+    sed -i "s/listen 80;/listen 443 ssl;\n http2 on;/g" /etc/nginx/web.conf
     sed -i "s/# ssl_certificate/ssl_certificate/g" /etc/nginx/web.conf
     sed -i "s/# ssl_certificate_key/ssl_certificate_key/g" /etc/nginx/web.conf
 fi
