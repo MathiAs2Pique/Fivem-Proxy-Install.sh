@@ -56,6 +56,10 @@ echo "Please enter the domain name of your server (Ex: play.myserver.com)"
 read -p "Domain Name: " domain
 echo "Do you want to auto-generate an SSL certificate? (y/n)"
 read -p "Auto Generate SSL: " ssl
+if [ "$ssl" == "y" ]; then
+echo "Please specify your e-mail address to associate with the certificate"
+read -p "Your Email: " cert
+fi
 
 # Install certbot for SSL (if needed)
 if [ "$ssl" == "y" ]; then
@@ -80,7 +84,7 @@ sed -i "s/server_name_goes_here/$domain/g" /etc/nginx/web.conf
 if [ "$ssl" == "y" ]; then
     echo -e "\nGenerating SSL certificate..."
     systemctl stop nginx
-    certbot certonly --nginx -d $domain --non-interactive --agree-tos --email youremail@example.com
+    certbot certonly --nginx -d $domain --non-interactive --agree-tos --email $cert
     # Copy certificate files
     cp /etc/letsencrypt/live/$domain/fullchain.pem /etc/nginx/ssl/fullchain.pem
     cp /etc/letsencrypt/live/$domain/privkey.pem /etc/nginx/ssl/privkey.pem
