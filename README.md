@@ -16,6 +16,7 @@ Additionally, some people were asking me how to do it, so I decided to make a sc
 1. Download the script
 2. Make it executable: `chmod +x fivem-proxy-install.sh`
 3. Run it: `./fivem-proxy-install.sh`
+4. If you're using CloudFlare, you may need to include cloudflare.conf from your nginx.conf, in order to get the real players IP addresses.
 
 ## Usage
 1. Follow the instructions
